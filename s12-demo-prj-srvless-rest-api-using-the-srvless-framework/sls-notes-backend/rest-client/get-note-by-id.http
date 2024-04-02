@@ -1,0 +1,4 @@
+GET http://localhost:3000/prod/note/id/galhardo_id:4d1c27c0-a571-45c3-a971-558fd3a1b0fe
+content-type: application/json
+app_user_id: galhardo_id
+app_user_name: galhardo

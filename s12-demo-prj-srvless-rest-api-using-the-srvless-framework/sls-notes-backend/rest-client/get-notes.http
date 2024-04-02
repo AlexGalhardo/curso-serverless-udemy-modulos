@@ -1,0 +1,4 @@
+GET http://localhost:3000/prod/notes
+content-type: application/json
+app_user_id: galhardo_id
+app_user_name: galhardo

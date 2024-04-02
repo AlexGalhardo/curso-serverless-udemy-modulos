@@ -1,0 +1,13 @@
+POST http://localhost:3000/prod/note
+# POST https://wmf3njfrq5.execute-api.us-east-1.amazonaws.com/prod/note
+content-type: application/json
+app_user_id: galhardo_id
+app_user_name: galhardo
+
+{
+  "Item": {
+    "title": "Note 7",
+    "content": "Content note 7",
+    "category": "general"
+  }
+}

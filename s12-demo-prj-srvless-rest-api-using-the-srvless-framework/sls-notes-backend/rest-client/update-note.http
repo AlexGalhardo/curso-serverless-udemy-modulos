@@ -1,0 +1,15 @@
+PATCH http://localhost:3000/prod/note
+# POST https://wmf3njfrq5.execute-api.us-east-1.amazonaws.com/prod/note
+content-type: application/json
+app_user_id: galhardo_id
+app_user_name: galhardo
+
+{
+  "Item": {
+    "timestamp": 1712084598,
+    "note_id": "galhardo_id:4d1c27c0-a571-45c3-a971-558fd3a1b0fe",
+    "title": "Note edited",
+    "content": "atualizado",
+    "category": "movie"
+  }
+}

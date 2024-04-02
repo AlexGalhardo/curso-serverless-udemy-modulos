@@ -1,0 +1,8 @@
+POST https://f51ii47z67.execute-api.us-east-1.amazonaws.com/prod/math/add-bm
+
+{
+  "input": {
+    "operand1": 4,
+    "operand2": 5
+  }
+}

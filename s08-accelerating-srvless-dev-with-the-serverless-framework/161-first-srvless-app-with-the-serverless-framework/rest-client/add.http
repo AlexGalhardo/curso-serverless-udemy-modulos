@@ -1,0 +1,8 @@
+POST http://localhost:3000/dev/math/add
+
+// POST https://zanky68828.execute-api.us-east-1.amazonaws.com/dev/math/add
+
+{
+  "num1": 10,
+  "num2": 8
+}

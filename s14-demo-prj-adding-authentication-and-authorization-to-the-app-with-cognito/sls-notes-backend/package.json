@@ -1,0 +1,25 @@
+{
+  "name": "sls-notes-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-cognito-identity": "^3.445.0",
+    "@aws-sdk/client-dynamodb": "^3.437.0",
+    "@aws-sdk/lib-dynamodb": "^3.437.0",
+    "jwt-decode": "^4.0.0",
+    "moment": "^2.29.4",
+    "serverless-offline": "^13.2.0",
+    "underscore": "^1.13.6",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/underscore": "^1.11.12"
+  }
+}
