@@ -1,4 +1,5 @@
-GET http://localhost:3000/prod/note/id/galhardo_id:4d1c27c0-a571-45c3-a971-558fd3a1b0fe
+GET https://wmf3njfrq5.execute-api.us-east-1.amazonaws.com/prod/note/id/galhardo_id:4a2f0ef5-9717-4c60-94a1-d09af49dcda4
+# GET http://localhost:3000/prod/note/id/galhardo_id:4d1c27c0-a571-45c3-a971-558fd3a1b0fe
 content-type: application/json
 app_user_id: galhardo_id
 app_user_name: galhardo

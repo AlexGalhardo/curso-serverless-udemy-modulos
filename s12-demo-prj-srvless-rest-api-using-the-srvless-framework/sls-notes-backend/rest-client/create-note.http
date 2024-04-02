@@ -1,4 +1,5 @@
-POST http://localhost:3000/prod/note
+POST https://sls-notes-api.alexgalhardo.com/v1/note
+# POST http://localhost:3000/prod/note
 # POST https://wmf3njfrq5.execute-api.us-east-1.amazonaws.com/prod/note
 content-type: application/json
 app_user_id: galhardo_id
