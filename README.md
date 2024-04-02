@@ -128,3 +128,8 @@ sls logs -f add -s prod --startTime 5m
 ```bash
 sls logs -f add -s prod --tail
 ```
+
+## Create domain
+```bash
+sls create_domain
+```
