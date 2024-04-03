@@ -18,10 +18,10 @@ custom:
     - app_user_id
     - app_user_name
   customDomain:
-    domainName: sls-notes-api.alexgalhardo.com
+    domainName: sls-notes-api.galhardoalex.com
     basePath: "v1"
     stage: ${self:provider.stage}
-    certificateName: alexgalhardo.com
+    certificateName: galhardoalex.com
     createRoute53Record: true
 
 provider:
@@ -58,7 +58,7 @@ functions:
           method: post
           cors:
             origin: "*"
-            # headers: ${self:custom.allowedHeaders}
+            headers: "${self:custom.allowedHeaders}"
 
   update-note:
     handler: api/update-note.handler
@@ -69,8 +69,7 @@ functions:
           method: patch
           cors:
             origin: "*"
-            headers:
-              - ${self:custom.allowedHeaders}
+            headers: "${self:custom.allowedHeaders}"
 
   get-notes:
     handler: api/get-notes.handler
@@ -81,8 +80,7 @@ functions:
           method: get
           cors:
             origin: "*"
-            headers:
-              - ${self:custom.allowedHeaders}
+            headers: "${self:custom.allowedHeaders}"
 
   get-note:
     handler: api/get-note.handler
@@ -93,8 +91,7 @@ functions:
           method: get
           cors:
             origin: "*"
-            headers:
-              - ${self:custom.allowedHeaders}
+            headers: "${self:custom.allowedHeaders}"
 
   delete-note:
     handler: api/delete-note.handler
@@ -105,8 +102,7 @@ functions:
           method: delete
           cors:
             origin: "*"
-            headers:
-              - ${self:custom.allowedHeaders}
+            headers: "${self:custom.allowedHeaders}"
 
 resources:
   Resources:

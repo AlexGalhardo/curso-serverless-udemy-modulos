@@ -1,4 +1,5 @@
-PATCH http://localhost:3000/prod/note
+PATCH https://sls-notes-api.galhardoalex.com/v1/note
+# PATCH http://localhost:3000/prod/note
 # POST https://wmf3njfrq5.execute-api.us-east-1.amazonaws.com/prod/note
 content-type: application/json
 app_user_id: galhardo_id

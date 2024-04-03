@@ -1,4 +1,5 @@
-DELETE http://localhost:3000/prod/note/timestamp/1712084598
+DELETE https://sls-notes-api.galhardoalex.com/v1/note/timestamp/1712084598
+# DELETE http://localhost:3000/prod/note/timestamp/1712084598
 content-type: application/json
 app_user_id: galhardo_id
 app_user_name: galhardo

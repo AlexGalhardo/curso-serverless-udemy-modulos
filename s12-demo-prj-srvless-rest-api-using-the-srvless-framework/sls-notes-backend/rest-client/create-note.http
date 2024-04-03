@@ -1,4 +1,4 @@
-POST https://sls-notes-api.alexgalhardo.com/v1/note
+POST https://sls-notes-api.galhardoalex.com/v1/note
 # POST http://localhost:3000/prod/note
 # POST https://wmf3njfrq5.execute-api.us-east-1.amazonaws.com/prod/note
 content-type: application/json
@@ -7,8 +7,8 @@ app_user_name: galhardo
 
 {
   "Item": {
-    "title": "Note 7",
-    "content": "Content note 7",
+    "title": "Note 8",
+    "content": "Content note 8",
     "category": "general"
   }
 }
