@@ -3,7 +3,7 @@ frameworkVersion: "3"
 
 plugins:
   - serverless-offline
-#  - serverless-domain-manager
+  - serverless-domain-manager
 
 custom:
   allowedHeaders:
@@ -17,12 +17,12 @@ custom:
     - X-Amz-User-Agent
     - app_user_id
     - app_user_name
-#  customDomain:
-#    domainName: api.notesapp.xyz
-#    basePath: "v1"
-#    stage: ${self:provider.stage}
-#    certificateName: notesapp.xyz
-#    createRoute53Record: true
+  customDomain:
+    domainName: sls-notes-api.galhardoalex.com
+    basePath: "v1"
+    stage: ${self:provider.stage}
+    certificateName: galhardoalex.com
+    createRoute53Record: true
 
 provider:
   name: aws
@@ -31,10 +31,10 @@ provider:
   stage: prod
   memorySize: 128
   timeout: 5
-  endpointType: regional
+  endpointType: 'REGIONAL'
   environment:
     NOTES_TABLE: ${self:service}-${opt:stage, self:provider.stage}
-    COGNITO_IDENTITY_POOL_ID: us-east-1:62ebf8bf-193e-480d-bcef-8f282aca50fa
+    COGNITO_IDENTITY_POOL_ID: us-east-1:f9b76833-4b5b-4258-b12b-8f2acf4b00df
   iam:
     role:
       statements:

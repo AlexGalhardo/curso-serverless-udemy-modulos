@@ -5,8 +5,8 @@ var ngw = require("@ngtools/webpack");
 
 const path = require("path");
 
-const API_ROOT = "https://qcexihv6f3.execute-api.us-east-1.amazonaws.com"; // CHANGE THIS TO MATCH THE URL OF YOUR API GATEWAY API OR YOUR CUSTOM DOMAIN FOR API
-const STAGE = "/prod"; // CHANGE THIS TO MATCH THE STAGE OF YOUR API OR BASEPATH OF YOUR CUSTOM DOMAIN FOR API e.g. /prod OR /v1
+const API_ROOT = 'https://sls-notes-api.galhardoalex.com/v1';
+const STAGE = "";
 const METADATA = webpackMerge(commonConfig.metadata, {
   API_ROOT: API_ROOT,
   STAGE: STAGE,

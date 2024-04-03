@@ -11,7 +11,7 @@ declare const STAGE: string;
 export class AuthService {
   constructor(private router: Router, private httpClient: HttpClient) {
     google.accounts.id.initialize({
-      client_id: "client id",
+      client_id: "247903134637-5a2c34l8krsdc03dk6fmsramm534mqbp.apps.googleusercontent.com",
       callback: this.handleCredentialResponse.bind(this),
     });
   }

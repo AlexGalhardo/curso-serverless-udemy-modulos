@@ -1,5 +1,8 @@
 # [Udemy Serverless Course](https://www.udemy.com/course/aws-lambda-serverless-architecture)
 
+## Apps Developed
+- http://galhardoalex.com.s3-website-us-east-1.amazonaws.com/
+
 ## Docs
 - https://www.datadoghq.com/state-of-serverless/
 - https://docs.aws.amazon.com/lambda/latest/dg/nodejs-context.html
@@ -8,6 +11,13 @@
 - https://aws.amazon.com/dynamodb/pricing/
 - https://docs.aws.amazon.com/cli/latest/reference/lambda/
 - https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-authorization-flow.html#apigateway-resource-policies-iam-policies-interaction
+
+## AWS Services
+- https://aws.amazon.com/codepipeline/
+- https://aws.amazon.com/codecommit/
+- https://aws.amazon.com/codebuild/
+- https://aws.amazon.com/cloudfront/
+- https://aws.amazon.com/cognito/
 
 ## Repos
 - https://aws.amazon.com/pt/serverless/serverlessrepo/
@@ -83,4 +93,30 @@ sls logs -f add -s prod --tail
 - Create domain
 ```bash
 sls create_domain
+```
+
+## ClodFront CDN
+```bash
+aws cloudfront create-invalidation --distribution-id E2095V0M7WS9WE --paths "/*"
+```
+
+## S3
+
+### Bucket s3 read access policy
+```json
+{
+  "Id": "Policy1712165669376",
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Stmt1712165663738",
+      "Action": [
+        "s3:GetObject"
+      ],
+      "Effect": "Allow",
+      "Resource": "arn:aws:s3:::galhardoalex.com/*",
+      "Principal": "*"
+    }
+  ]
+}
 ```

@@ -26,7 +26,7 @@ export class NotesApiService {
         let itemData;
         itemData = {
             content: item.content,
-            cat: item.cat
+            category: item.cat
         };
 
         if(item.title != "") {
@@ -47,7 +47,7 @@ export class NotesApiService {
         let itemData;
         itemData = {
             content: item.content,
-            cat: item.cat,
+            category: item.cat,
             timestamp: parseInt(item.timestamp),
             note_id: item.note_id
         };
@@ -64,7 +64,7 @@ export class NotesApiService {
     }
 
     deleteNote(timestamp) {
-        let path = STAGE + '/note/t/' + timestamp;
+        let path = STAGE + '/note/timestamp/' + timestamp;
         let endpoint = API_ROOT + path;
         this.setOptions();
         return this.httpClient.delete(endpoint, this.options);
